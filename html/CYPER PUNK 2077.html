@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Adventure - Trailer Mới</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Icon Font -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>  
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+	  background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .article-content {
+      margin-top: 20px;
+    }
+
+    .article-content p {
+      line-height: 1.6;
+    }
+
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .author {
+      font-weight: bold;
+    }
+	  
+	  .image-container {
+  display: flex;
+  justify-content: center;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+	  
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  font-weight: bold;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 10px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+}
+
+.social p {
+  margin-top: 10px; /* Khoảng cách giữa các đoạn văn bản */
+}
+
+
+.slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .fade {
+      animation: fade 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+	 
+	 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 60%;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+	<header class="bg-yellow-500">
+    <div class="container mx-auto flex justify-between items-center py-6">
+      <a href="#" class="text-white text-3xl font-bold">Cyberpunk</a>
+      <nav>
+        <ul class="flex items-center space-x-4">
+          <li class="dropdown"><a href="#" class="text-white hover:text-gray-200">Games</a>
+            <div class="dropdown-content">
+              <a href="#">Action Games</a>
+              <a href="#">Adventure Games</a>
+              <a href="#">Puzzle Games</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="text-white hover:text-gray-200">Shows</a>
+            <div class="dropdown-content">
+              <a href="#">Drama</a>
+              <a href="#">Comedy</a>
+              <a href="#">Documentary</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="text-white hover:text-gray-200">Community</a>
+            <div class="dropdown-content">
+              <a href="#">Forums</a>
+              <a href="#">Events</a>
+              <a href="#">Blogs</a>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" class="text-white hover:text-gray-200">More</a>
+            <div class="dropdown-content">
+              <a href="#">News</a>
+              <a href="#">Contact Us</a>
+              <a href="#">About Us</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-white hover:text-gray-200">EN</a>
+        <a href="#" class="bg-white text-yellow-500 px-4 py-2 rounded-full hover:bg-gray-200">Buy Now</a>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <h1 style="font-size: 3em; color: #d4af37;">Cyber Adventure - Trailer Mới</h1>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8X2kIfS6fb8" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <form id="dataForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <script>
+      document.getElementById("dataForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+        if (!isValidEmail(email)) {
+          alert("Please enter a valid email address.");
+        } else {
+          alert("Thông tin sớm nhất sẽ gửi ngay đến bạn");
+          document.getElementById("dataForm").reset();
+        }
+      });
+
+      function isValidEmail(email) {
+        var regex = /\S+@\S+\.\S+/;
+        return regex.test(email);
+      }
+    </script>
+    
+    <div class="article-content">
+		
+ <div style="border: 2px solid #d4af37; padding: 20px; color: #d4af37; margin-bottom: 20px;">
+    <h2>Cyberpunk 2077 - Đánh Giá Game</h2>
+</div>
+ 
+<p>Cyberpunk 2077 là tựa game được mong đợi nhất trong năm, và nó đã mang đến những trải nghiệm không thể nào quên cho người chơi. Với đồ họa tuyệt đẹp, cốt truyện phức tạp và gameplay đa dạng, Cyberpunk 2077 đã chinh phục hàng triệu người chơi trên toàn thế giới.</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="../picture/cyberpunk-2077-danh-gia-game-1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="../picture/cyberpunk-2077-danh-gia-game-4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="../picture/cyberpunk-2077-danh-gia-game-7.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="../picture/cyberpunk-2077-danh-gia-game-6.jpg" style="width:100%">
+        </div>  
+      </div>
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let slides = document.getElementsByClassName("mySlides");
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Thay đổi hình ảnh sau mỗi 2 giây
+        }
+      </script>
+    </div>
+
+ <div style="border: 2px solid #d4af37; padding: 20px; color: #d4af37; margin-bottom: 20px;">
+    <h2>Cyberpunk 2077 - Hành Trình Đáng Nhớ</h2>
+</div>
+    
+    <p>Cyberpunk 2077 đã có một hành trình phát triển dài và đáng nhớ. Từ tấm ảnh concept đầu tiên được công bố vào tháng 5 năm 2012, cho đến khi chính thức ra mắt vào cuối năm 2020, tựa game này đã thu hút sự chú ý của cộng đồng game thủ trên toàn thế giới.</p>
+    <p>Trong quãng đường 8 năm và 7 tháng đó, chúng ta đã chứng kiến sự phát triển của CD Projekt RED từ một nhà phát triển game tầm cỡ trở thành một trong những gã khổng lồ của ngành công nghiệp game.</p>
+    <p>Bên cạnh đó, Cyberpunk 2077 cũng đối mặt với nhiều thách thức và sóng gió, từ việc phải hoãn ngày ra mắt đến việc phải đối mặt với ý kiến phê bình từ cộng đồng game thủ sau khi ra mắt.</p>
+
+    <div style="border: 2px solid #d4af37; padding: 20px; color: #d4af37; margin-bottom: 20px;">
+    <h3>BẠN SẼ THÍCH</h3>
+</div>
+    <div style="border: 2px solid #d4af37; padding: 20px; color: #d4af37; margin-bottom: 20px;">
+    <h4>SẢN PHẨM KHÔNG DÀNH CHO NGƯỜI “VỘI”</h4>
+</div>
+	  <div class="image-container">
+  <img width="600px" src="../picture/cyberpunk-2077-danh-gia-game-4.jpg" alt="Cyberpunk 2077" />
+</div>
+    <p
+>Cyberpunk 2077 đã có một hành trình phát triển dài và đáng nhớ. Từ tấm ảnh concept đầu tiên được công bố vào tháng 5 năm 2012, cho đến khi chính thức ra mắt vào cuối năm 2020, tựa game này đã thu hút sự chú ý của cộng đồng game thủ trên toàn thế giới.</p>
+<p>Trong quãng đường 8 năm và 7 tháng đó, chúng ta đã chứng kiến sự phát triển của CD Projekt RED từ một nhà phát triển game tầm cỡ trở thành một trong những gã khổng lồ của ngành công nghiệp game.</p>
+<p>Bên cạnh đó, Cyberpunk 2077 cũng đối mặt với nhiều thách thức và sóng gió, từ việc phải hoãn ngày ra mắt đến việc phải đối mặt với ý kiến phê bình từ cộng đồng game thủ sau khi ra mắt.</p>
+
+<div style="border: 2px solid #d4af37; padding: 20px; color: #d4af37; margin-bottom: 20px;">
+    <h3>BẠN SẼ GHÉT</h3>
+</div>
+<div class="image-container">
+  <img width="600px" src="../picture/cyberpunk-2077-danh-gia-game-7.jpg" alt="Cyberpunk 2077" />
+</div>
+
+<p>Đôi khi, Cyberpunk 2077 vẫn còn thiếu điều gì đó để chạm đến "đỉnh" của mình. Mặc dù đã có những nỗ lực lớn để tạo ra một tựa game hoàn hảo, nhưng vẫn còn những điểm yếu và hạn chế mà người chơi có thể cảm thấy không hài lòng.</p>
+
+<p>Dù được đánh giá cao và được kỳ vọng rất nhiều, nhưng cuối cùng Cyberpunk 2077 vẫn chỉ là một tựa game "thường thôi". Có những khía cạnh của nó vẫn còn chưa thực sự hoàn hảo và có thể khiến người chơi cảm thấy thất vọng sau khi trải qua.</p>
+	  
+<div style="border: 2px solid #d4af37; padding: 20px; color: #d4af37; margin-bottom: 20px;">
+    <h3>TỔNG QUÁT</h3>
+</div>
+<div class="image-container">
+  <img width="600px" src="../picture/cyberpunk-2077-danh-gia-game-6.jpg" alt="Cyberpunk 2077" />
+</div>
+	  
+<p>Cyberpunk 2077 vẫn là một tựa game cực kì đáng để chơi và bỏ tiền ra mua, xét trên ba khía cạnh thuần túy nhất: nội dung, lối chơi và đồ họa. Nhưng phiên bản đến tay người chơi lại là một sản phẩm kém hoàn thiện.
+
+
+
+CD Projekt RED có thể làm tốt hơn như hiện tại không? Có chứ!
+
+
+
+Và rõ ràng những nhân viên tại đó cần thêm thời gian để chỉn chu cho "đứa con tinh thần" mang tên Cyberpunk 2077, hơn là phải ra mắt đúng hẹn và sau đó là những câu chuyện chẳng mấy hay ho...</p>
+	  
+<div class="container mx-auto">
+    <div class="flex flex-col items-center justify-center min-h-screen">
+      <div class="w-full max-w-3xl p-8 mx-auto mt-10 bg-gray-900 rounded-lg shadow-lg">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl font-bold text-white">Thông tin cấu hình tối thiểu và cấu hình đề nghị chơi Cyberpunk 2077</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <div class="flex flex-col">
+            <h3 class="text-xl font-semibold text-white">Cấu hình tối thiểu</h3>
+            <div class="mt-4">
+              <ul class="space-y-2">
+                <li><span class="font-medium text-gray-300">Hệ điều hành:</span> Windows 10 (64-bit only)</li>
+                <li><span class="font-medium text-gray-300">CPU:</span> Intel Core i5-3570K / AMD FX-8310</li>
+                <li><span class="font-medium text-gray-300">RAM:</span> 8GB</li>
+                <li><span class="font-medium text-gray-300">GPU:</span> NVIDIA GeForce GTX 780 / AMD Radeon RX 470</li>
+                <li><span class="font-medium text-gray-300">DirectX:</span> 12</li>
+                <li><span class="font-medium text-gray-300">Dung lượng ổ cứng trống:</span> 70GB</li>
+                <li><span class="font-medium text-gray-300">Card âm thanh:</span> Tương thích với DirectX 12</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="text-xl font-semibold text-white">Cấu hình đề nghị</h3>
+            <div class="mt-4">
+              <ul class="space-y-2">
+                <li><span class="font-medium text-gray-300">Hệ điều hành:</span> Windows 10 (64-bit only)</li>
+                <li><span class="font-medium text-gray-300">CPU:</span> Intel Core i7-4790 / AMD Ryzen 3 3200G</li>
+                <li><span class="font-medium text-gray-300">RAM:</span> 12GB</li>
+                <li><span class="font-medium text-gray-300">GPU:</span> NVIDIA GeForce GTX 1060 / AMD Radeon RX 590</li>
+                <li><span class="font-medium text-gray-300">DirectX:</span> 12</li>
+                <li><span class="font-medium text-gray-300">Dung lượng ổ cứng trống:</span> 70GB</li>
+                <li><span class="font-medium text-gray-300">Card âm thanh:</span> Tương thích với DirectX 12</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">		  
+  <a href="https://www.cyberpunk.net/vi/system-requirements/" target="_blank" rel="noopener noreferrer" class="px-8 py-3 font-semibold rounded-md bg-gray-800 text-white">
+    <span style="border-bottom: 2px solid red; color: blue;">DOWNLOAD</span>
+  </a>
+</div>
+
+      </div>
+    </div>
+  </div>
+<div class="profile">
+  <img class="avatar" src="../picture/OIP (2).jpg" alt="Avatar của NGUYENHUYBAO(MILO)">
+  <div class="username">NGUYENHUYBAO(MILO)</div>
+  <i class="fa fa-facebook icon"></i>
+  <i class="fa fa-instagram icon"></i>
+  <i class="fa fa-youtube icon"></i>
+</div>
+	  
+<div class="footer">
+  <div class="column">
+    <h3>GAME</h3>
+    <ul>
+      <li>Tin Game</li>
+      <li>Đánh Giá</li>
+      <li>Giới Thiệu</li>
+      <li>Chuyên Đề</li>
+      <li>Hướng Dẫn</li>
+      <li>Lịch Phát Hành</li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h3>GAMING GEAR</h3>
+    <ul>
+      <li>Tin Gaming Gear</li>
+      <li>Đánh Giá</li>
+      <li>Đánh Giá Nhanh</li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h3>GADGETS</h3>
+    <ul>
+      <li>Tin Gadgets</li>
+      <li>Đánh Giá</li>
+      <li>Trên Tay</li>
+      <li>Công Nghệ</li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h3>ESPORTS</h3>
+    <ul>
+  <li>
+	  <a href="Untitled-1.html">Tin eSports</a>
+</li>
+</ul>
+  </div>
+  
+  <div class="social" style="display: flex; align-items: center;">
+  <a href="https://www.facebook.com/" target="_blank" style="color: #ffffff; margin-right: 10px;"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.instagram.com/" target="_blank" style="color: #ffffff; margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/" target="_blank" style="color: #ffffff; margin-right: 10px;"><i class="fab fa-youtube"></i></a>
+	<a href="https://www.saigonchildren.com/" target="_blank" style="color: #ffffff; margin-right: 10px;">Liên hệ</a>
+        <a href="https://www.savethechildren.net/" target="_blank" style="color: #ffffff; margin-right: 10px;">Ủng hộ</a>
+        <a href="https://www.youtube.com/" target="_blank" style="color: #ffffff; margin-right: 10px;">Quảng cáo</a>  
+</div>
+
+    </div>
+	  
+    <p style="text-align: right; color: #ffffff; padding: 0 20px;">© 2024 NHBMILO All Rights Reserved</p>
+	  
+  </div>
+</body>
+</html>

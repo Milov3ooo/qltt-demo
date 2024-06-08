@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Ký</title>
+    <link rel="stylesheet" href="../css/dangki.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Đăng Ký</h1>
+        <form id="registerForm" onsubmit="return validateForm()">
+            <label for="username">Tên Đăng Nhập:</label>
+            <input type="text" id="username" name="username" placeholder="Vui lòng nhập tên đăng nhập"required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Vui lòng nhập Email" required>
+            
+            <label for="password">Mật Khẩu:</label>
+            <input type="password" id="password" name="password" placeholder="Vui lòng nhập mật khẩu" required>
+            
+            <label for="confirmPassword">Xác Nhận Mật Khẩu:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Vui lòng xác nhận lại mật khẩu" required>
+            
+            <button type="submit">Đăng Ký</button>
+        </form>
+    </br>
+        <a href="Login.html"><button>Trở Về</button></a>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+    <script src="../js/dangki.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/Login.css">
+</head>
+
+<body>
+    <header>
+        <h1>GameZone News</h1>
+        <nav>
+            
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="phieuluu.html">Đánh giá</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li><a href="gthieu.html">Liên hệ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Danh mục</a>
+                    <div class="dropdown-content">
+                        <a href="hanhdong.html">Hành động</a>
+                        <a href="phieuluu.html">Phiêu lưu</a>
+                        <a href="Chienluoc.html">Chiến lược</a>
+                        <a href="Thethao.html">Thể thao</a>
+                        <a href="moba.html">GMOBA</a>
+                        <a href="rpg.html">RPG</a>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+</header>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Nhập Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Nhập Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="social-login">
+                <button class="social-btn fb-btn" onclick="handleFBLogin()">Login with Facebook</button>
+                <button class="social-btn google-btn" onclick="handleGoogleLogin()">Login with Google</button>
+            </div>
+            <div class="form-dangki">
+               <button><label><a style=" color:bisque;"href="dangki.html">Đăng Kí</a></label></button>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="../js/Login.js"></script>
+</body>
+</html>

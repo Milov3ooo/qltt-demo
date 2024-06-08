@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Tin Tức Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/rpg.css">
+</head>
+
+<body>
+    <header>
+        <h1>GameZone News
+            <img src="../picture/logo.jpg" class="anhlogo">
+        </h1>
+        <nav>
+            <form action="" id="search-box">
+                <input type="text" id="search-text" placeholder="Bạn Muốn Tìm Kiếm gì?" required>
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul>
+                <li><a href="chinh2.html">Trang chủ</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Thể Loại</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fa-solid fa-bars"></i></a>
+                    <div class="dropdown-content">
+                        <a href="hanhdong.html">Hành động</a>
+                        <a href="phieuluu.html">Phiêu lưu</a>
+                        <a href="Chienluoc.html">Chiến lược</a>
+                        <a href="Thethao.html">Thể thao</a>
+                        <a href="moba.html">GMOBA</a>
+                        <a href="rpg.html">RPG</a>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="news">
+            <h2>Tin Tức Về Các GAME Nhập Vai hot nhất năm 2024</h2>
+            <article>
+                <h3>The Witcher 3: Wild Hunt</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg1.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p> là một tựa game hành động nhập vai dựa trên bộ tiểu thuyết của nhà văn Andrzej Sapkowski người Balan. Kèm theo đồ họa 3D và âm thanh cực sống động đã thêm phần hấp dẫn cho tựa game này.
+                    Bắt đầu trò chơi, bạn sẽ hóa thân thành Geralt of Rivia người dân xứ Rivia là một vị thợ săn quái vật được ban tặng quyền năng và sức mạnh siêu nhiên...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('The Witcher 3: Wild Hunt')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>Skyrim</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg2.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p> Tiếp theo đây cũng sẽ là một tựa game danh giá mang về cho chủ của nó giải thưởng Game Of The Year của năm 2011, nó có tên là Skyrim. Game lấy bối cảnh của một vùng đất băng tuyết cực kỳ khắc nghiệt, nơi diễn ra cuộc chiến giữa 2 phe quân đội chính là Imperial và quân giải phóng...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Skyrim')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>Outward</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg3.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p>Outward là tựa game nhập vai thế giới mở mang phong cách sinh tồn. Khi chơi game bạn luôn phải để ý đến thanh máu của mình để không phải kết thúc game quá sớm. Mọi thứ trong game luôn rình rập và muốn giết bạn bất cứ lúc nào. Từ đó phải phải cảnh giác và chiến đấu để bảo vệ mình và đánh bại tất cả kẻ thù...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Outward')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>Monster Hunter Rise</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg4.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p>Monster Hunter Rise là phần thứ 6 của loạt game Monster Hunter nổi tiếng trong giới game thủ được ra mắt trong năm 2022. Với bối cảnh game là trong làng Kamura, người chơi cùng với đồng đội của mình có trách nhiệm phải bảo vệ và cung cấp hàng hóa cho làng bằng cách chống lại các quái vật hay những con rồng lớn khác biệt...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Monster Hunter Rise')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>God of War Series</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg5.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p> Game kể về hành trình của Kratos ở vùng đất mới. Trong game này, bên cạnh việc phải tiêu diệt đối thủ là những quái thú và các vị thần thì người chơi còn được khám phá bí ẩn ở thần thoại Hy Lạp và Bắc Âu. God of War Series thuộc thể loại phiêu lưu, hành động còn kết hợp với giải đố để người chơi phải dùng đến não để tư duy nhiều hơn.
+                    Về lối chơi có thể không quá khác biệt với các phần trước...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('God of War Series')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>Sekiro: Shadow Die Twice</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg6.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p>Sekiro: Shadow Die Twice là một tựa game là một game nhập vai rất kém người chơi vì độ khó quá cao khiến nhiều game thủ phải "lên tiếng". Tuy nhiên game cũng khiến người chơi phấn khích với các tình tiết mới lạ và khác biệt Nhà sản xuất game đã thay đổi hoàn toàn cơ cấu chiến đấu và lối chơi so với các game cùng hãng, chẳng hạn như Souls...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Sekiro: Shadow Die Twice')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>Elden Ring</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg7.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p>Elden Ring là một tựa game hập vai có điểm số cao nhất bởi vì chất lượng game tuyệt vời, đồ họa đặc sắc cộng thêm độ khó "đau đầu" của game. Chính vì độ khó như vậy nên đây không phải là một con game dành cho số đông hay những người chơi không thực sự kiên nhẫn để vượt qua thử thách...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Elden Ring ')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>Divinity: Original Sin 2</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg8.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p>Divinity: Original Sin 2 lại rất thành công khi đạt được 2 giải thưởng danh giá là game RPG được nhiều game thủ yêu thích nhất và giải game hay nhất của năm do tạp chí PC gamer bình chọn Game có cốt truyện rõ ràng và lối đi riêng của mình và cách kể chuyện cực kì cuốn hút...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Divinity: Original Sin 2')">Đánh giá</button></a>
+            </div>
+            </article>
+            <article>
+                <h3>Disco Elysium</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg9.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p>Disco Elysium là game giải đố nhập vai khi tham gia bạn sẽ đóng vai một vị cảnh sát chuyên điều tra các vụ án li kì trong khu vực quản lý của mình Game thuộc dạng phiêu lưu và điều tra...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Disco Elysium')">Đánh giá</button></a>
+            </div>
+            </article>
+
+            <article>
+                <h3>Diablo II</h3>
+                <img style="margin-right:24px"height="380px" width="720px"src="../picture/rpg10.jpg">
+                <p><b>Ngày phát hành: 25/05/2024</b></p>
+                <p>Diablo II là phần tiếp theo của tựa game huyền thoại Diablo được ra mắt trước đó. Cốt truyện xoay quanh việc diễn ra ở một thánh đường của một ngôi làng nhỏ tên là Tristram...</p>
+                <div class="buttons">
+                <a href="https://www.thegioididong.com/game-app/top-20-game-rpg-hay-nhat-danh-cho-may-tinh-pc-1314222" target="_blank"><button>Đọc Thêm </button></a>
+                <a href="#review-section"><button onclick="rateWebsite('Diablo II')">Đánh giá</button></a>
+            </div>
+            </article>
+
+        </section>
+        <div id="review-section" class="container">
+        <section id="rating">
+            <h2>Đánh giá của bạn</h2>
+            <form id="ratingForm" onsubmit="submitRating(event)">
+                <label for="websiteName">Tên trang web:</label>
+                <input type="text" id="websiteName" name="websiteName" readonly><br>
+                <label for="rating">Đánh giá (sao):</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+                <label for="comments">Nhận xét:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea><br>
+                <button type="submit">Gửi đánh giá</button>
+            </form>
+            <p id="confirmationMessage" style="display:none; color:green;">Đã lưu thông tin</p>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="../picture/logo.jpg"class="anhlogo">
+                <h4>Liên hệ</h4>
+                <p>Email: info@example.com</p>
+                <p>Điện thoại: 0123-456-789</p>
+                <p style="font-size: 11pt;"> Địa Chỉ 1: 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Tp.Hcm</p>
+                <p style="font-size: 11pt;"> Địa Chỉ 2: 235 Lý Thái Tổ, H.Quảng Điền, Thừa Thiên Huế, Tp.Hcm</p>
+                <p style="font-size: 11pt;"> Địa Chỉ 3: Ngõ 234 Hàng Than, Q.Ba Đình, Hà Nội, Tp.Hcm</p>
+            </div>
+            <div class="footer-section">
+                <h4>GAME</h4>
+             <ul>
+               <li>Tin Game</li>
+               <li>Đánh Giá</li>
+               <li>Giới Thiệu</li>
+               <li>Chuyên Đề</li>
+               <li>Hướng Dẫn</li>
+               <li>Lịch Phát Hành</li>
+             </ul>         
+            </div>
+            <div class="footer-section">
+                <h4>GAMING GEAR</h4>
+            <ul>
+              <li>Tin Gaming Gear</li>
+              <li>Đánh Giá</li>
+              <li>Đánh Giá Nhanh</li>
+              <li>Tin Gadgets</li>
+               <li>Đánh Giá</li>
+               <li>Trên Tay</li>
+               <li>Công Nghệ</li>         
+            </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Theo dõi chúng tôi</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                </div>
+                <div class="social-icons">
+                    <p style="font-size:11pt;">Giấy phép thiết lập mạng xã hội trên mạng số 170/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 04 tháng 04 năm 2022.
+                        <p style="font-size:11pt;">Chịu trách nhiệm nội dung: KS2B.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/rpg.js"></script>
+</body>
+</html>

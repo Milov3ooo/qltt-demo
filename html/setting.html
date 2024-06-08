@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/setting.css">
+</head>
+
+<body>
+<section id="settings" class="active">
+    <a style="color:black" href="admin.html"><h2>Home</h2></a>
+     <div class="card">
+        <h2>Cài đặt Chung</h2>
+        <form>
+            <label for="site-name">Tên Trang Web</label>
+            <input style="text-align: center; font-size: 20px;" type="text" id="site-name" name="site-name" value="Tin Tức Về Game">
+            
+            <label for="site-logo">Logo Trang Web</label>
+            <input type="file" id="site-logo" name="site-logo">
+            
+            <label for="language">Ngôn Ngữ</label>
+            <select id="language" name="language">
+                <option value="vi">Tiếng Việt</option>
+                <option value="en">Tiếng Anh</option>
+                <option value="fr">Tiếng Pháp</option>
+                <option value="es">Tiếng Tây Ban Nha</option>
+                <option value="de">Tiếng Đức</option>
+                <option value="zh">Tiếng Trung</option>
+                <option value="ja">Tiếng Nhật</option>
+            </select>
+            
+            <label for="timezone">Múi Giờ</label>
+            <select id="timezone" name="timezone">
+                <option value="UTC">UTC</option>
+                <option value="FT">French Time (FT)</option>
+                <option value="UTC">UTC</option>
+                <option value="VNT">Viet Nam Time (VNT)</option>
+                <option value="UTC">UTC</option>
+                <option value="ST">Spanish Time (ST)</option>
+                <option value="UTC">UTC</option>
+                <option value="GT">German Time (GT)</option>
+                <option value="UTC">UTC</option>
+                <option value="AET">American English Time (AET)</option>
+                <option value="UTC">UTC</option>
+                <option value="CT">Chinese Time (CT)</option>
+                <option value="UTC">UTC</option>
+               <option value="JT">Japanese Time (JT)</option>
+            </select>
+            <button type="submit">Lưu Cài Đặt</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Cài đặt Bảo mật</h3>
+        <form>
+            <label for="two-factor-auth">Xác Thực Hai Yếu Tố:</label>
+            <select id="two-factor-auth" name="two-factor-auth">
+                <option value="enabled">Bật</option>
+                <option value="disabled">Tắt</option>
+            </select>
+            
+            <label for="password-policy">Chính Sách Mật Khẩu:</label>
+            <select id="password-policy" name="password-policy">
+                <option value="strong">Mạnh</option>
+                <option value="medium">Trung Bình</option>
+                <option value="weak">Yếu</option>
+            </select>
+            
+            <label for="ip-whitelist">Danh Sách IP Cho Phép:</label>
+            <textarea id="ip-whitelist" name="ip-whitelist" rows="4" placeholder="Nhập các địa chỉ IP, mỗi IP trên một dòng"></textarea>
+            
+            <button type="submit">Lưu Cài Đặt</button>
+        </form>
+    </div>
+</section>
+<script src="../js/settings.js"></script>
+</body>
+</html>

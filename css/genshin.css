@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+    color: #333;
+}
+
+header, .footer {
+    background-image: url("../picture/anh/backgroud/genshin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:black;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.carousel-item img, .article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.related-articles .article, .latest-news-grid .article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-form, .comment-section form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.social-sharing a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.social-sharing a:hover {
+    color: #000;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+#phai {
+    float: left;
+    padding: 30.5px;
+    margin-right: 10px;
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"], .comment-section input[type="submit"] {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover, .comment-section input[type="submit"]:hover {
+    background-color: #2980b9;
+}

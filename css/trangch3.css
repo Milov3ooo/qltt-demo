@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, white);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(135deg, red 21%, #5cc6ee 50%);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 70px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.news-section {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.news-item {
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    height:250px;
+}
+
+.news-item img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.news-content h2 {
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    margin-bottom: 10px;
+}
+
+.news-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 11px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.video-item {
+    display: flex;
+    margin-bottom: 20px;
+    gap:10px;
+}
+
+.video-item video {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.video-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;  /* Thay đổi kích thước nút phát */
+    height: 40px; /* Thay đổi kích thước nút phát */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button i {
+    width: 24px; /* Thay đổi kích thước biểu tượng phát */
+    height: 24px; /* Thay đổi kích thước biểu tượng phát */
+}
+.video-info h3 {
+    margin-bottom: 5px;
+}
+
+.video-info span {
+    color: #777;
+    font-size: 14px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+    *{
+    box-sizing: border-box;
+    }
+    #search-box{
+        border-radius: 30px;
+    }
+    #search-box #search-text{
+        border: none;
+        outline: none;
+        background: none;
+        font-size:18px;
+        color:black;
+        width:0;
+        transition: all 0.75s ease-in-out;
+    }
+    #search-box:hover #search-text ,#search-box #search-text:valid{
+        width: 250px;
+        padding: 10px 0px 10px 15px;
+    }
+    #search-box #search-btn{
+        background-color:antiquewhite;
+        cursor:pointer;
+        border:none;
+        padding:10px;
+        border-radius: 50%;
+        font-size:17px;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+    read-more:hover{
+        color:blue;
+        transform: scale(1.1);
+    }
+    .bd {
+    display: block;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 90%;
+}
+
+.bd img {
+    width: 355px;
+    height: 150px;
+    border-radius: 8px 0 0 8px;
+    object-fit: cover;
+}
+
+.bd-content {
+    padding: 15px;
+    flex: 1;
+    
+}
+
+.bd-meta {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.bd-meta .author {
+    color: #f00;
+    font-weight: bold;
+}
+
+.bd-meta .category {
+    margin: 0 5px;
+}
+
+.bd-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.bd-description {
+    font-size: 1em;
+    color: #666;
+}
+footer {
+    background: linear-gradient(135deg, #6B73FF 5%, violet 50%);
+    color: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #FFFFFF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    margin: 5px 0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFD700; 
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+.anhlogo{
+    width:50px;
+    height:50px;
+    border-radius: 50%;border: 3px solid #000;margin-bottom: 20px; 
+}
+a{
+    color:black;
+}
+a:hover{
+    color:brown;
+    text-decoration: none;
+}
+.social-icons a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFD700; 
+}
+
+
+.ad-container {
+    position:absolute;
+    top: 65%;
+    right: 20px; /* Điều chỉnh khoảng cách với mép phải của trình duyệt */
+      transform: translateY(-50%);
+      width: 400px;
+      height:500px; /* Điều chỉnh kích thước của hình ảnh quảng cáo */
+      
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ad-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-left: 20px;
+    border: 1px solid #ddd; /* Thêm viền */
+}
+
+.ad-container:hover {
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.ad-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ad-container img:hover {
+    transform: scale(1.05);
+}
+
+.ad-caption p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px; /* Thêm khoảng cách phía trên nút */
+}
+
+.cta-button:hover {
+    background-color: #e04400;
+    transform: scale(1.05);
+}
+
+/* Phần quảng cáo sẽ trượt khi cuộn trang */
+@media (max-width: 1024px) {
+    .ad-container {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.news-ccon {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.newsz-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    outline: none;
+}
+
+.btn-read-more:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.btn-read-more .icon {
+    margin-right: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --button-hover-color: #333;
+    --arrow-color: #ff5e5e;
+}
+#go-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: var(--black-color);
+    bottom: 75px;
+    right: 20px;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+#go-to-top:hover {
+    background-color: var(--button-hover-color);
+    transform: translateY(-5px);
+}
+
+.btn-gototop {
+    color: var(--arrow-color);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#go-to-bottom {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: var(--black-color);
+    bottom: 75px;
+    right: 20px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+#go-to-bottom:hover {
+    background-color: var(--button-hover-color);
+    transform: translateY(-5px);
+}
+
+.btn-gotobottom {
+    color: var(--arrow-color);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.news1 {
+    margin-bottom: 20px;
+}
+
+.news1-item {
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+.qcchinh img:hover{
+    transform:none;
+}
+button#loadMore {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #D32F2F;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #B71C1C;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#loadMore:hover {
+    background: #C62828;
+}

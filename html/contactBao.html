@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/contactBao.css">
+</head>
+
+<body>
+    <header>
+        <h1>Liên Hệ</h1>
+    </header>
+    <main>
+        <div class="contact-info">
+            <img width="150px"src="../picture/shinichi.jpg">
+            <h2>Thông Tin Liên Hệ</h2>
+            <p><strong>Họ Và Tên:</strong> Nguyễn Huy Bảo</p>
+            <p><strong>Mã Số Sinh Viên:</strong> 2033220316</p>
+            <p><strong>Chuyên Ngành:</strong> An Toàn Thông Tin</p>
+            <p><strong>Địa chỉ:</strong> 290/28 Nguyễn Hữu Cảnh, phường 22, Quận Bình Thạnh</p>
+            <p><strong>Điện thoại:</strong> 0901850061</p>
+            <p><strong>Email:</strong> <a style="text-decoration: none;" href="baosino2468@gmail.com">Đây là Email của tôi</a></p>
+        </div>
+        <div class="contact-form">
+            <h2>Gửi Tin Nhắn</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Tin Nhắn:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Gửi Tin Nhắn</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/dangki-nhap.css">
+</head>
+
+<body>
+    <header>
+        <h1>GameZone News</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Danh mục</a>
+                    <div class="dropdown-content">
+                        <a href="#">Hành động</a>
+                        <a href="#">Phiêu lưu</a>
+                        <a href="#">Chiến lược</a>
+                        <a href="#">Thể thao</a>
+                        <a href="#">GMOBA</a>
+                        <a href="#">RPG</a>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+</header>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Nhập Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Nhập Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="social-login">
+                <button class="social-btn fb-btn" onclick="handleFBLogin()">Login with Facebook</button>
+                <button class="social-btn google-btn" onclick="handleGoogleLogin()">Login with Google</button>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="../js/dangki-nhap.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="Login.html">Đăng Xuất</a></li>
+                <li><a href="dash.html" onclick="showSection('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="showSection('users')">Users</a></li>
+                <li><a href="#" onclick="showSection('posts')">Posts</a></li>
+                <li><a href="setting.html" onclick="showSection('settings')">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2 style="text-align: center">Tổng Quan</h2>
+            <div class="card">
+                <h3 style="text-align: center">Tổng Cộng Người Dùng</h3>
+                <p style="text-align: center" id="total-users">1000</p>
+            </div>
+            <div class="card">
+                <h3 style="text-align: center">Bài Viết Mới</h3>
+                <p style="text-align: center;" id="new-posts">1500</p>
+            </div>
+            <div class="card">
+                <h3 style="text-align: center">Doanh Thu</h3>
+                <p style="text-align: center">132,940,300 VNĐ</p>
+            </div>
+        </section>
+
+        <section id="users">
+            <h2>Users</h2>
+            <button onclick="addUser()">Add User</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table-body">
+                    <!-- User rows will go here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="posts">
+            <h2>Posts</h2>
+            <button onclick="addPost()">Add Post</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="post-table-body">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="settings">
+            <h2>Settings</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

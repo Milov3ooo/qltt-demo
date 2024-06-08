@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../css/dash.css">
+</head>
+
+<body> 
+    <div class="nbar">
+        <a href="admin.html">Admin Dash</a>
+        <a href="dash.html">Dashboard</a>
+        <a href="setting.html">Settings</a>
+    </div>
+    <div class="dashboard">
+        <h1>Dashboard</h1>
+        <div class="stats">
+            <div class="card">
+                <h2>Tổng số người dùng</h2>
+                <p>1000</p>
+            </div>
+            <div class="card">
+                <h2>Tổng số bài viết</h2>
+                <p>1500</p>
+            </div>
+        </div>
+        <div class="charts">
+            <h2>Biểu đồ thống kê</h2>
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+        <div class="notifications">
+            <h2>Thông báo</h2>
+            <ul id="notificationsList">
+            </ul>
+        </div>
+    </div>
+    <script src="../js/dash.js"></script>
+</body>
+</html>
