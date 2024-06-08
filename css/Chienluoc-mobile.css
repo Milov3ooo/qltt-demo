@@ -3,17 +3,17 @@
 /* Responsive styles */
 @media screen and (max-width: 1200px) {
     .footer-container {
-        padding: 0 20px;
+        padding: 0 2vw; /* Padding tương ứng với viewport width */
     }
 }
 
 @media screen and (max-width: 992px) {
     main {
-        padding: 15px;
+        padding: 2vh 2vw; /* Padding tương ứng với viewport height và viewport width */
     }
 
     .footer-section {
-        flex: 0 0 calc(50% - 20px);
+        flex: 0 0 calc(50% - 2vw); /* Chiều rộng tương ứng với viewport width */
     }
 }
 
@@ -21,15 +21,16 @@
     header {
         flex-direction: column;
         text-align: center;
+        padding: 1vh 2vw; /* Padding tương ứng với viewport height và viewport width */
     }
 
     nav ul {
-        margin: 20px 0;
+        margin: 2vh 0; /* Margin tương ứng với viewport height */
         flex-direction: column;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 1vh 0; /* Margin tương ứng với viewport height */
     }
 
     .dropdown-content {
@@ -44,46 +45,55 @@
 
     .dropdown-content a {
         color: #fff;
-        padding: 10px 0;
+        padding: 1vh 0; /* Padding tương ứng với viewport height */
     }
 
     main {
-        margin: 10px auto;
+        margin: 2vh auto; /* Margin tương ứng với viewport height */
     }
 
     .content {
         margin-left: 0;
-        padding: 15px;
+        padding: 2vh 2vw; /* Padding tương ứng với viewport height và viewport width */
     }
 
     .sidebar {
         position: static;
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 2vh; /* Margin tương ứng với viewport height */
     }
 
     .ad-container {
         position: static;
         width: 100%;
         height: auto;
-        margin-top: 20px;
+        margin-top: 2vh; /* Margin tương ứng với viewport height */
         border-left: none;
     }
 
     .buttons a {
         display: block;
-        margin: 10px 0;
+        margin: 1vh 0; /* Margin tương ứng với viewport height */
+        padding: 1vh 2vw; /* Padding tương ứng với viewport height và viewport width */
+    }
+
+    /* Điều chỉnh kích thước hình ảnh trên thiết bị di động */
+    article img {
+        max-width: 80vmin; /* Chiều rộng tối đa bằng 80% của viewport minimum */
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 1vh; /* Margin tương ứng với viewport height */
     }
 }
 
 @media screen and (max-width: 576px) {
     header h1 {
-        font-size: 2em;
+        font-size: 5vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
     }
 
     nav ul li a {
-        font-size: 1em;
+        font-size: 3vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
     }
 
     main {
@@ -91,14 +101,86 @@
     }
 
     article {
-        padding: 15px;
+        padding: 2vh 2vw; /* Padding tương ứng với viewport height và viewport width */
     }
 
     .footer-section {
         flex: 0 0 100%;
     }
 
-    #search-box:hover #search-text, #search-box #search-text:valid {
-        width: 180px;
+    #search-box:hover #search-text,
+    #search-box #search-text:valid {
+        width: 40vmin; /* Chiều rộng tương ứng với viewport minimum */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Điều chỉnh phần header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1vh 2vw; /* Padding tương ứng với viewport height và viewport width */
+    }
+
+    header h1 {
+        font-size: 6vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
+        margin-bottom: 1vh; /* Margin tương ứng với viewport height */
+    }
+
+    .anhlogo {
+        width: 10vmin; /* Kích thước tương ứng với viewport minimum */
+        height: 10vmin;
+        margin-left: 0;
+    }
+
+    /* Điều chỉnh phần nội dung chính */
+    main {
+        padding: 2vh 2vw; /* Padding tương ứng với viewport height và viewport width */
+    }
+
+    article {
+        padding: 2vh 2vw; /* Padding tương ứng với viewport height và viewport width */
+    }
+
+    article h3 {
+        font-size: 4vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
+    }
+
+    article img {
+        max-width: 80vmin; /* Chiều rộng tối đa bằng 80% của viewport minimum */
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 1vh; /* Margin tương ứng với viewport height */
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttons a {
+        margin: 1vh 1vw; /* Margin tương ứng với viewport height và viewport width */
+        padding: 1vh 2vw; /* Padding tương ứng với viewport height và viewport width */
+        font-size: 3vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header h1 {
+        font-size: 5vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
+    }
+
+    .anhlogo {
+        width: 8vmin; /* Kích thước tương ứng với viewport minimum */
+        height: 8vmin;
+    }
+
+    article h3 {
+        font-size: 4vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
+    }
+
+    p {
+        font-size: 3vmin; /* Kích thước phông chữ tương ứng với viewport minimum */
     }
 }
