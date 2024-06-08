@@ -1,0 +1,104 @@
+/* Chienluoc-mobile.css */
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .footer-container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        padding: 15px;
+    }
+
+    .footer-section {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        background-color: transparent;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    main {
+        margin: 10px auto;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .ad-container {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-left: none;
+    }
+
+    .buttons a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    main {
+        border-radius: 0;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    .footer-section {
+        flex: 0 0 100%;
+    }
+
+    #search-box:hover #search-text, #search-box #search-text:valid {
+        width: 180px;
+    }
+}
